@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>ileri zeka bir robot</title>
+  <link rel="stylesheet" type="text/css" href="/static/base.css" />
+</head>
+<body>
+  buraya bir dokumantasyon yazmak gerek
+  
+  <h2>Son donen muhabbetin listesi </h2>
+  <dl>
+    {% for question in questions %}
+      <dt>{{question.question}}</dt>
+      <dd>{{question.answer}}</dd>
+    {% endfor %}
+  </dl>
+</body>
+</html>
